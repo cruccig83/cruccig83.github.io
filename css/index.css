@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --granate: #d0142c;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--granate) ;
+}
+
+
+/*Header*/
+.main-header{
+    display: flex;
+    align-items: center;
+    padding: 8px 8px 8px 64px;
+    background-color: var(--granate);
+    color: white;
+    height: 100px;
+    text-decoration: none;
+}
+.main-header h1{
+    padding-left: 20px;
+}
+.main-header h1 a{
+    text-decoration: none;
+    color: white;
+}
+.header-escudo{
+    height: 80px;
+}
+.main-header h1:hover,
+.header-escudo:hover{
+    cursor: pointer;
+}
+.header-buscador{
+    position: absolute;
+    right: 0;
+    background-color: var(--granate);
+    border: 1px solid white;
+    margin: 64px;
+    line-height: 32px;
+    color: white;
+    width: 332px;
+    padding: 8px 8px 8px 16px;
+}
+.header-buscador::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+
+/*Navbar*/
+.navbar{
+    background-color: white;
+    color: var(--granate);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-bottom: 1px soliphd var(--granate);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#nav-escudo{
+    height: 36px;
+    display: none;
+    animation-name: animacion;
+    animation-duration: 1s;
+}
+@keyframes animacion{
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+#nav-escudo:hover{
+    height: 38px;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center; 
+    padding-left: 64px;
+    justify-content: space-between;
+}
+.navbar ul li{ 
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-right: 64px;
+}
+.navbar ul li:hover{
+    cursor: pointer;
+    color: var(--granate);
+}
+
+    /* Institucional*/
+    .institucional{
+        position: relative;
+        display: inline-block;
+    }
+
+    .btn-institucional {
+        margin: 0;
+        background-color: white;
+        color: var(--granate);
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        width: 100%;
+    }
+        .dropdown-institucional {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 320px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: var(--granate);
+            color: white;
+        }
+        .dropdown-buttons-institucional{
+            min-width: 300px;
+        }
+        .intendente-GLopez{
+            min-width: 200px;
+            padding: 16px 16px 16px 16px;
+            text-align: center;
+        }
+        .intendente-GLopez:hover{
+            text-decoration: underline;
+        }
+        .foto-GLopez{
+            height: 140px;
+            border-radius: 50%;
+        }
+        .nombre-GLopez{
+            font-weight: bold;
+            font-size: var(--lg);
+            color: var(--granate);
+            margin: 0;
+        }
+        .cargo-GLopez{
+            font-weight: normal;
+            font-size: var(--md);
+            color: var(--granate);
+        }
+        .dropdown-institucional:hover .dropdown-content {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 16px;
+            }
+        .dropdown-institucional:hover .btn-institucional {font-weight: bold;
+        }
+
+
+    /*Autogestion*/
+    .autogestion{
+        position: relative;
+        display: inline-block;
+    }
+
+    .btn-autogestion {
+        margin: 0;
+        background-color: white;
+        color: var(--granate);
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        width: 100%;
+    }
+    .dropdown-autogestion {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 320px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        background-color: var(--granate);
+        color: white;
+    }
+    .dropdown-autogestion:hover .dropdown-content {display: block;}
+    .dropdown-autogestion:hover .btn-autogestion {font-weight: bold;
+    }
+
+
+    /*informacion*/
+    .informacion{
+        position: relative;
+        display: inline-block;
+    }
+
+    .btn-informacion {
+        margin: 0;
+        background-color: white;
+        color: var(--granate);
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        width: 100%;
+    }
+    .dropdown-informacion {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 320px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        background-color: var(--granate);
+        color: white;
+    }
+    .dropdown-informacion:hover .dropdown-content {display: block;}
+    .dropdown-informacion:hover .btn-informacion {font-weight: bold;
+    }
+
+
+    /*prensa*/
+    .prensa{
+        position: relative;
+        display: inline-block;
+    }
+
+    .btn-prensa {
+        margin: 0;
+        background-color: white;
+        color: var(--granate);
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        width: 100%;
+    }
+    .dropdown-prensa {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 320px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        background-color: var(--granate);
+        color: white;
+    }
+    .dropdown-prensa:hover .dropdown-content {display: block;}
+    .dropdown-prensa:hover .btn-prensa {font-weight: bold;
+    }
+
+
+/*contacto*/
+.contacto{
+    position: relative;
+    display: inline-block;
+}
+
+.btn-contacto {
+    margin: 0;
+    background-color: white;
+    color: var(--granate);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+  }
+  .dropdown-contacto {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-contacto-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 320px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-contacto-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-contacto-content a:hover {
+      background-color: var(--granate);
+      color: white;
+}
+  .dropdown-contacto:hover .dropdown-contacto-content {display: block;}
+  .dropdown-contacto:hover .btn-contacto {font-weight: bold;
+}
+
+
+
+/*BANNER*/
+.banner{
+    width: 100%;
+    padding: 4px 64px 0px 80px;
+    border-bottom: 2px solid var(--granate);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+}
+.banner div:nth-child(1){
+    height: 340px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}.banner div:nth-child(1) img{
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+}
+.banner-photo{
+    z-index: 0;
+    display: none;
+    display: none;
+    animation-name: animacionBanner;
+    animation-duration: 1.5s;
+}
+@keyframes animacionBanner{
+    0% {transform: translateY(100%);}
+    100% {transform: translateY(0);}
+}
+.banner div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+}
+.banner div button{
+    width: 300px;
+    margin: 4px;
+    height: 180px;
+    color: var(--granate);
+    font-weight: bold;
+    font-size: var(--lg);
+    background-color: transparent;
+    border: none;
+    border-top: 4px solid var(--granate);
+    border-bottom: 4px solid var(--granate);
+}
+.banner div button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    background-color: white;
+}
+section{
+    width: 70%;
+    padding: 24px 64px 24px 64px;
+}
+/* Articulos*/
+section article{
+    margin: 16px;
+    padding: 16px 16px 16px 16px;
+    display: flex;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05)
+}
+section article:hover{
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(202, 23, 45, 0.5)
+}
+.desarrollo-noticia{
+    margin-left: 16px;
+}
+.article-fecha{
+    font-size: var(--sm);
+    color: lightgray;
+}
+.article-title{
+    font-size: var(--lg);
+    font-weight: bold;
+    color: var(--granate);
+}
+.img-noticia{
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+/*Municipios*/
+
+h2{
+    text-align: center;
+    font-size: 36px;
+    color: var(--granate);
+    padding-bottom: 12px;
+    border-top: 4px solid var(--granate);
+    margin: 32px 0 16px 0;
+    padding: 8px;
+  }
+.tarjetas-municipios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.show-on-scroll{
+    opacity: 0;
+    transition: 250ms ease-in;
+}
+
+.show-on-scroll.appear{
+    opacity: 1;
+}
+
+.municipios-presentacion{
+    background-color: white;
+    width: 30%;
+    height: 450px;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--lg);
+    border: 2px solid var(--granate);
+    border-radius: 16px;
+}
+.municipios-presentacion:hover{   
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    cursor:pointer;
+}
+.municipios-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.municipios-foto{
+    height: 55%;
+    border-bottom: 4px solid var(--granate);
+}
+.municipios-autoridad{
+    border: 1px solid;
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    overflow: hidden;
+    margin: 4px;
+}
+.municipios-autoridad img{
+    height: 100%;
+}
+/*aside*/
+aside{
+    background-color: lightgray;
+    width: 30%;
+    right: 100;
+    align-items: center;
+    margin: 0;
+}
+
+.destacada{
+    width: 90%;
+    height: 240px;
+    margin: 16px;
+    border: 2px solid white;
+    border-radius: 16px;
+    background-color: white;
+    object-fit: cover;
+    overflow: hidden;
+}
+.destacada:hover{
+    cursor: pointer;
+}
+.destacada-contimg{
+    height: 192px;
+    justify-content: center;
+    overflow: hidden;
+}
+aside article img{
+    width:100%;
+}
+
+.destacada-descripcion{
+    padding: 4px;
+    background-color: white;
+    color: var(--granate);
+    font-weight: bold;
+    text-align: center;
+    bottom: 0;
+    z-index: 2;
+}
+.destacada-click{
+    text-decoration: none;
+    color: var(--granate);
+    font-size: var(--sm);
+    font-weight: normal;
+}
+.destacada-click:hover{
+    text-decoration: underline;
+}
+
+
+
+/*FOOTER*/
+footer{
+    background-color: var(--granate);
+    clear: both;
+    height: fit-content;
+    width: 100%;
+    color: white;
+    align-items: center;
+    bottom: 0;
+}
+.footer-info{
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    gap: 196px;
+    left: 0;
+    border-bottom: 1px solid white;
+}
+.footer-direccion p:nth-child(1),
+.footer-contacto p:nth-child(1){
+    font-weight: bold;
+}
+.footer-contLogo{
+    right: 0;
+    padding-right: 64px;
+    position: absolute;
+}
+.footer-logo{
+    height: 48px;
+    right: 0;
+}
+.footer-copyright{
+    font-size: var(--sm);
+}
+.footer-privacy{
+    position: absolute;
+    padding: 16px;
+}
+.footer-privacy a{
+    font-size: small;
+    color: white;
+    text-decoration: none;
+    margin: 48px 48px 0 48px;
+}
+.footer-privacy a:hover{
+    text-decoration: underline;
+}
+

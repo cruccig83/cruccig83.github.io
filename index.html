@@ -1,18 +1,346 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intendencia de Florida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./icons/faviconProvisorio.png" type="image/png">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <script src="js/funcionalidad-escudo.js"></script>
 </head>
+
+
+
+<header class="main-header" id="main-header">
+    <a href="/index.html"><img src="./images/EscudoDeFlorida.png" alt="Escudo de Florida" class="header-escudo"> </a>
+    <h1>Intendencia Departamental de Florida</h1>
+    <input type="text" placeholder="Busca algo..." class="header-buscador">
+</header>
+
+
 
 <body>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+    <nav class="navbar">
+        <div class="navbar-buttons">
+            <ul>
+                <li >
+                    <img src="./images/EscudoDeFlorida.png" alt="" id="nav-escudo">
+                </li>
+                <li class="institucional navbar-hover">
+                    <div class="dropdown-institucional">
+                        <button class="btn-institucional">Institucional</button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-buttons-institucional">
+                                <a href="autoridades.html">Autoridades</a>
+                                <a href="./nav-institucional/nav-transparencia.html">Transparencia</a>
+                                <a href="./nav-institucional/nav-resoluciones.html">Resoluciones</a>
+                                <a href="./nav-institucional/nav-licitaciones.html">Licitaciones</a>
+                                <a href="http://florida.gub.uy/wps/wcm/connect/eacdbe28-135d-47b7-8a59-4d7a469b05cf/manual+de+cargos31+.pdf?MOD=AJPERES&CACHEID=eacdbe28-135d-47b7-8a59-4d7a469b05cf" target="_blank">Manual de Funciones</a>
+                            </div>
+                          <div class="intendente-GLopez">
+                              <img src="./images/IntendenteGLopez.jpg" alt="Intendente Guillermo López" class="foto-GLopez">
+                              <p class="nombre-GLopez">Ing. Guillermo López</p>
+                              <p class="cargo-GLopez">Intendente de Florida</p>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+                <li class="autogestion navbar-hover">
+                    <div class="dropdown-autogestion">
+                        <button class="btn-autogestion">Autogestión</button>
+                        <div class="dropdown-content">
+                          <a href="https://spf.sistarbanc.com.uy/spfdebitos/seleccionServicio.jsp" target="_blank">Pagos en linea</a>
+                          <a href="#">Duplicado de facturas</a>
+                          <a href="#">Consulta de deudas</a>
+                          <a href="#">Consulta expedientes</a>
+                          <a href="#">Formularios</a>
+                          <a href="http://www.florida.gub.uy:8081/desasocialft/servlet/consultarbeca" target="_blank">Consulta de becas</a>
+                          <a href="http://florida.gub.uy:8081/agenda_web/servlet/agendaweb" target="_blank">Agenda web</a>
+                          <a href="https://arquitecturaidf.wixsite.com/arquitecturaidf" target="_blank">Trámites arquitectura</a>
+                          <a href="http://www.florida.gub.uy:8081/exoneraciontasa_frontend/ingresarsolicitudexoneracion" target="_blank">Exonaración tributos IDF</a>
+                        </div>
+                      </div>
+                </li>
+                <li class="informacion navbar-hover">
+                    <div class="dropdown-informacion">
+                        <button class="btn-informacion">Información</button>
+                        <div class="dropdown-content">
+                          <a href="https://agrim-flo.blogspot.com" target="_blank">Agrimensura</a>
+                          <a href="./nav-informacionhtml/infogeneral.html">Información general</a>
+                          <a href="#">Call Center</a>
+                          <a href="./nav-informacionhtml/vencimientos.html">Vencimientos</a>
+                          <a href="#">Hacienda</a>
+                          <a href="https://portalidf.wixsite.com/turismoflorida" target="_blank">Turismo Florida</a>
+                          <a href="http://www.florida.gub.uy/wps/wcm/connect/b39e47cf-aef8-4daa-8297-ab5fabdb9f30/instructivo_y_formulario.pdf?MOD=AJPERES" target="_blank">Cartificado único departamental</a>
+                          <a href="http://www.florida.gub.uy/wps/wcm/connect/2c7d29d8-b352-4971-8519-6bbd23438ead/PROTOCOLO+ODI-1_transito_dicapacitados.pdf?MOD=AJPERES" target="_blank">Exoneración tránsito (ODI)</a>
+                          <a href="https://experience.arcgis.com/experience/14ea2867ef764458b3745aebd802e49b" target="_blank">Visualizador COVID-19</a>
+                          <a href="https://www.gub.uy/uruguaysevacuna" target="_blank">Uruguay se vacuna (agenda)</a>
+                        </div>
+                      </div>
+                </li>
+                <li class="prensa navbar-hover">
+                    <div class="dropdown-prensa">
+                        <button class="btn-prensa">Área de prensa</button>
+                        <div class="dropdown-content">
+                          <a href="#">Noticias</a>
+                          <a href="https://www.youtube.com/channel/UCzynyHPtyCYCDGG91BFiY7Q" target="_blank">Canal de Youtube</a>
+                          <a href="#">TV IDF — Online</a>
+                          <a href="https://comunicacionesidf4.wordpress.com" target="_blank">Blog</a>
+                        </div>
+                      </div>
+                </li>
+                <li class="contacto navbar-hover">
+                    <div class="dropdown-contacto">
+                        <button class="btn-contacto">Contacto</button>
+                        <div class="dropdown-contacto-content">
+                          <a href="#">Formulario de contacto</a>
+                          <a href="#">Oficinas y horarios</a>
+                          <a href="#">Consultas y reclamos</a>
+                        </div>
+                      </div>
+                </li>
+            </ul>
+        </div>
+        
+    
+        </ul>
+    </nav>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
 
+    <section class="banner">    
+         <div>
+             <img src="./images/noticiaejemplo.jpg" alt="" class="banner-photo" id="banner-photo">
+         </div>
+         <div>
+            <button id="banner-btnPago"> <img src="./icons/mobile-phone.png"><p>Pago en linea</p></button>
+            <button id="banner-btnAgenda"> <img src="./icons/calendar.png"> <p>Agenda web</p></button>
+            <button id="banner-btnBlog"><img src="./icons/newspaper.png"><p>Blog de noticias</p></button>
+         </div>
+    </section>
+    <main>
+        <section>
+            <article>
+                <div>
+                    <img src="./images/noticiaejemplo.jpg" alt="foto noticia" class="img-noticia">
+                </div>
+                <div class="desarrollo-noticia">
+                    <p class="article-fecha">09/01/2022</p>
+                    <p class="article-title">Titulo de la noticia</p>
+                    <p class="article-desarrollo">Desarrollo de la noticia... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae deserunt earum aut pariatur commodi minima sapiente laudantium fugiat quaerat voluptas, libero molestiae tempora quas alias reiciendis rerum! Officiis, hic quis.</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <img src="./images/noticiaejemplo.jpg" alt="foto noticia" class="img-noticia">
+                </div>
+                <div class="desarrollo-noticia">
+                    <p class="article-fecha">09/01/2022</p>
+                    <p class="article-title">Titulo de la noticia</p>
+                    <p class="article-desarrollo">Desarrollo de la noticia... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae deserunt earum aut pariatur commodi minima sapiente laudantium fugiat quaerat voluptas, libero molestiae tempora quas alias reiciendis rerum! Officiis, hic quis.</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <img src="./images/noticiaejemplo.jpg" alt="foto noticia" class="img-noticia">
+                </div>
+                <div class="desarrollo-noticia">
+                    <p class="article-fecha">09/01/2022</p>
+                    <p class="article-title">Titulo de la noticia</p>
+                    <p class="article-desarrollo">Desarrollo de la noticia... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae deserunt earum aut pariatur commodi minima sapiente laudantium fugiat quaerat voluptas, libero molestiae tempora quas alias reiciendis rerum! Officiis, hic quis.</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <img src="./images/noticiaejemplo.jpg" alt="foto noticia" class="img-noticia">
+                </div>
+                <div class="desarrollo-noticia">
+                    <p class="article-fecha">09/01/2022</p>
+                    <p class="article-title">Titulo de la noticia</p>
+                    <p class="article-desarrollo">Desarrollo de la noticia... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae deserunt earum aut pariatur commodi minima sapiente laudantium fugiat quaerat voluptas, libero molestiae tempora quas alias reiciendis rerum! Officiis, hic quis.</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <img src="./images/noticiaejemplo.jpg" alt="foto noticia" class="img-noticia">
+                </div>
+                <div class="desarrollo-noticia">
+                    <p class="article-fecha">09/01/2022</p>
+                    <p class="article-title">Titulo de la noticia</p>
+                    <p class="article-desarrollo">Desarrollo de la noticia... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae deserunt earum aut pariatur commodi minima sapiente laudantium fugiat quaerat voluptas, libero molestiae tempora quas alias reiciendis rerum! Officiis, hic quis.</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <img src="./images/noticiaejemplo.jpg" alt="foto noticia" class="img-noticia">
+                </div>
+                <div class="desarrollo-noticia">
+                    <p class="article-fecha">09/01/2022</p>
+                    <p class="article-title">Titulo de la noticia</p>
+                    <p class="article-desarrollo">Desarrollo de la noticia... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae deserunt earum aut pariatur commodi minima sapiente laudantium fugiat quaerat voluptas, libero molestiae tempora quas alias reiciendis rerum! Officiis, hic quis.</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <img src="./images/noticiaejemplo.jpg" alt="foto noticia" class="img-noticia">
+                </div>
+                <div class="desarrollo-noticia">
+                    <p class="article-fecha">09/01/2022</p>
+                    <p class="article-title">Titulo de la noticia</p>
+                    <p class="article-desarrollo">Desarrollo de la noticia... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae deserunt earum aut pariatur commodi minima sapiente laudantium fugiat quaerat voluptas, libero molestiae tempora quas alias reiciendis rerum! Officiis, hic quis.</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <img src="./images/noticiaejemplo.jpg" alt="foto noticia" class="img-noticia">
+                </div>
+                <div class="desarrollo-noticia">
+                    <p class="article-fecha">09/01/2022</p>
+                    <p class="article-title">Titulo de la noticia</p>
+                    <p class="article-desarrollo">Desarrollo de la noticia... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae deserunt earum aut pariatur commodi minima sapiente laudantium fugiat quaerat voluptas, libero molestiae tempora quas alias reiciendis rerum! Officiis, hic quis.</p>
+                </div>
+            </article>   
+            <div class="municipios">
+                <h2>Municipios del departamento</h2>
+                <div class="tarjetas-municipios">
+                    <div class="municipios-sarandi municipios-presentacion">
+                        <img src="./images/imgSarandi.jpg" alt="" class="municipios-foto">
+                        <p>Sarandí Grande</p>
+                        <div class="municipios-info">
+                            <div class="municipios-autoridad">
+                                <img src="./images/CStopingi.jpg" alt="">
+                            </div>
+                            <p>Sr. Cayetano Stopingi</p>
+                            <p>Alcalde</p>
+                        </div>
+                    </div>
+                    <div class="municipios-casupa municipios-presentacion">
+                        <img src="./images/imgcasupa.jpg" alt="" class="municipios-foto">
+                        <p>Casupá</p>
+                        <div class="municipios-info">
+                            <div class="municipios-autoridad">
+                                <img src="./images/LOlivaMontfort.jpg" alt="">
+                            </div>
+                            <p>Sr. Luis Oliva Monfort</p>
+                            <p>Alcalde</p>
+                        </div>
+                    </div>
+                    <div class="municipios-frayMarcos municipios-presentacion">
+                        <img src="./images/imgFrayMarcos.jpg" alt="" class="municipios-foto">
+                        <p>Fray Marcos</p>
+                        <div class="municipios-info">
+                            <div class="municipios-autoridad">
+                                <img src="./images/CStopingi.jpg" alt="">
+                            </div>
+                            <p>Sra. Stella Mary Tucuna</p>
+                            <p>Alcaldesa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </section>
+
+        <aside>
+            <article class="destacada">
+                <div class="destacada-contimg">
+                    <img src="./images/becass.jpeg" alt="becas">
+                </div>
+                <div class="destacada-descripcion">
+                    <p class="destacada-title">Inscripción becas 2022</p>
+                    <a class="destacada-click" href="http://www.florida.gub.uy:8081/desasocialft/servlet/wpcrearformulario">Iniciar Inscripción online</a>
+                </div>
+            </article>
+            <article class="destacada">
+                    <div class="destacada-contimg">
+                        <img src="./images/presupuesto.jpg" alt="presupuesto">
+                    </div>
+                    <div class="destacada-descripcion">
+                        <p class="destacada-title">Presupuesto aprobado 2021-2025</p>
+                        <a class="destacada-click" href="http://www.florida.gub.uy/wps/wcm/connect/ae835eec-07af-42d9-bd00-1cf5fec13803/DECRETO-JDF-12-21-Presupuesto-Quinquenal-Gobierno-Departamental-2021-2025.pdf?MOD=AJPERES">Más información</a>
+                    </div>
+            </article>
+            <article class="destacada">
+                <div class="destacada-contimg">
+                    <img src="https://images.pexels.com/photos/1173576/pexels-photo-1173576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="presupuesto">
+                </div>
+                <div class="destacada-descripcion">
+                    <p class="destacada-title">Guía de recursos departamentales LGTBIQ+</p>
+                    <p class="destacada-click">Consultar guía</p>
+                </div>
+            </article>
+            <article class="destacada">
+                <div class="destacada-contimg">
+                    <img src="https://images.pexels.com/photos/634612/pexels-photo-634612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="presupuesto">
+                </div>
+                <div class="destacada-descripcion">
+                    <p class="destacada-title">Aviso de equinos sueltos</p>
+                    <p class="destacada-click">092 251 920 — Guardia: 091 603 647</p>
+                </div>
+            </article>
+            <article class="destacada">
+                <div class="destacada-contimg">
+                    <img src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="presupuesto">
+                </div>
+                <div class="destacada-descripcion">
+                    <p class="destacada-title">Oficina 1%</p>
+                    <p class="destacada-click">Acceder</p>
+                </div>
+            </article>
+            <article class="destacada">
+                <div class="destacada-contimg">
+                    <img src="./images/banderaFlorida.jpg" alt="presupuesto">
+                </div>
+                <div class="destacada-descripcion">
+                    <p class="destacada-title">30 años de la bandera de Florida</p>
+                    <p class="destacada-click">Acceder</p>
+                </div>
+            </article>
+            <article class="destacada">
+                <div class="destacada-contimg">
+                    <img src="https://images.pexels.com/photos/4199524/pexels-photo-4199524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="presupuesto">
+                </div>
+                <div class="destacada-descripcion">
+                    <p class="destacada-title">Guía de Servicios</p>
+                    <p class="destacada-click">Acceder</p>
+                </div>
+            </article>
+            <article class="destacada">
+                <div class="destacada-contimg">
+                    <img src="https://images.pexels.com/photos/4328848/pexels-photo-4328848.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="presupuesto">
+                </div>
+                <div class="destacada-descripcion">
+                    <p class="destacada-title">Protocolo unificado tránsito y transporte</p>
+                    <p class="destacada-click">Acceder</p>
+                </div>
+            </article>
+        </aside>
+    </main>
 </body>
+<footer>
+    <div class="footer-info">
+        <div class="footer-direccion">
+            <p>Intendencia Departamental de Florida</p>
+            <p>Independencia 586</p>
+            <p>Florida, Uruguay</p>
+        </div>
+        <div class="footer-contacto">
+            <p>Teléfonos de contacto:</p>
+            <p>Call Center: 0800 2508</p>
+            <p>Teléfono: 4352 5161</p>
+        </div>
+        <div class="footer-contLogo">
+            <img src="./icons/logoFloridaBlanco.png" alt="logo Administracion Florida" class="footer-logo">
+        </div>
+    </div>
+    <div class="footer-privacy">
+        <p class="footer-copyright">© 2022 — Intendencia Departamental de Florida — Todos los Derechos Reservados</p>
+        <a href="/">Términos y condiciones</a>
+        <a href="/">Política de privacidad</a>
+    </div>
+</footer>
 </html>
